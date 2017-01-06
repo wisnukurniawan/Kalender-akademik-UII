@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_fakultas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/md_keylines"
+        android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_image_height"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/fti_uii1"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/fti_name"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/card_name"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_alignBottom="@+id/card_image"
+                    android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <Button
+                android:layout_gravity="end"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/button_lihat_kalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lihat kalender"
+                android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
