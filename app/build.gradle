@@ -19,6 +19,11 @@ android {
     }
 }
 
+ext {
+    supportVersion = '25.1.0'
+    caldroidVersion = '3.0.1'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -27,7 +32,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //support library
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:appcompat-v7:$supportVersion'
 
-    compile 'com.roomorama:caldroid:3.0.1'
+    //calender library
+    compile 'com.roomorama:caldroid:$caldroidVersion'
 }
